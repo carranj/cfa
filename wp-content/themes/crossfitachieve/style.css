@@ -1,0 +1,1024 @@
+/*
+Theme Name: CrossFit Achieve
+Theme URI: http://crossfitahievehouston.com
+Author: Larry Carranco, Jose Carranco
+Author URI: http://josecarranco.com
+Description: Custom theme made for CrossFit Achieve. This theme is fully responsive. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CrossFit Achieve
+
+*/
+
+/**************************************************************************************************
+Imports
+***************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+/**************************************************************************************************
+Universal
+***************************************************************************************************/
+.container {
+	max-width: 1380px;
+	width: 100%;
+}
+.clear-fix {
+	clear: both;
+}
+.paddingNone {
+	padding: 0px;
+}
+.paddingLeftAndRightNone {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.paddingLeftAndRight15px {
+	padding:15px;
+}
+.paddingLeftNone {
+	padding-left: 0px;
+}
+.paddingRightNone {
+	padding-right: 0px;
+}
+.paddingLeft15px {
+	padding: 0 0 0 15px;
+}
+.marginBottom30px {
+	margin-bottom: 30px;
+}
+.marginNegativeBottom30px {
+	margin-bottom: -30px;
+}
+.marginTop30px {
+	margin-top: 30px;
+}
+.marginRight30px {
+	margin-right: 30px;
+}
+.maxWidth100Pct {
+	max-width: 100%;
+}
+.marginNone {
+	margin: 0;
+}
+.greenColor {
+	color: #948b84;
+}
+.redColor {
+	color: #c30505;	
+}
+.redColorBackground {
+	background-color: #c30505;	
+}
+.redBorder {
+	border: 2px solid #c30505;
+}
+.borderNone {
+	border: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	color: #948b84;
+	text-decoration: none;
+}
+body {
+	font-family: 'Oswald', sans-serif;
+}
+a {
+	color: #948b84;
+}
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 24px;
+}
+p {
+	font-size: 18px;
+}
+li {
+	font-size: 18px
+}
+.internalPagesImageDiv, .scheduleImageDiv, .successStoriesImageDiv {
+	background-size: cover;
+}
+.internalPagesImageDiv h1, .scheduleImageDiv h1, .successStoriesImageDiv h1 {
+	margin: 0;
+	font-size: 65px;
+	font-weight: 700;
+	color: #ffffff;
+    text-shadow: -1px 3px 10px #747d7d;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.internalPagesTitle {
+	margin: auto;
+}
+.internalPagesImageDiv, .scheduleImageDiv, .successStoriesImageDiv {
+	min-height: 530px;
+}
+.internalPagesImageDiv img, .scheduleImageDiv img, .successStoriesImageDiv img {
+	height: 530px;
+}
+
+/********************************************
+Mobile Header
+*********************************************/
+.icon-bar {
+	background-color: #ffffff !important;
+	height: 3px !important;
+}
+.navbar-toggle {
+	float: left;
+}
+.mobileMenuButton {
+    margin: 0 0 0 0px !important;
+    padding: 17px 15px 16px 15px !important;
+    background-color: #A00000;
+    border-radius: 0px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-color: #000000 !important;
+}
+.mobileMenuButton:hover, .mobileMenuButton:focus {
+	background-color: #A00000 !important;
+}
+.navbar-phone {
+	display: inline-block;
+    padding: 63px 0px 0 0px;
+    font-size: 24px;
+    float: right;
+}
+.navbar-phone a:hover {
+	color: #948b84;
+}
+.navbarLogoMobile {
+    padding: 0 0 0 90px;
+    margin: 11px 0 -11px -90px;
+    width: 100%;}
+.logoInMobileHeader {
+	font-size: 20px !important;
+	line-height: normal !important;
+    color: #ffffff !important;
+    height: 0px !important;
+}
+.logoInMobileHeader span {
+	color: #ffffff !important;
+}
+.navbarPhoneMobile a {
+	color: #ffffff;
+}
+.navbarPhoneMobile a:hover {
+	color: #ffffff;
+}
+.phoneButton {
+	float: right; 
+	width: 44px;
+	height: 34px;
+    border: none;
+    padding: 0;
+}
+.phoneIconMobile {
+    margin: 0;
+    padding: 9px;
+	background-color: #A00000;
+}
+
+/********************************************
+Header
+*********************************************/
+.grayBorder{
+	border-bottom: 10px solid #948b84;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.desktopMenu {
+    background-color: #ffffff; /*Overrides native bootstrp background color and border*/
+    border: none;
+}
+.navbar-brandLarge {
+	font-size: 64px;
+	height: 126px;
+	width: 246px;
+	line-height: 61px;
+	padding: 0;
+	text-shadow: -1px 2px 8px rgba(150, 150, 150, 0.35);
+    margin: 30px 30px 0 0;
+}
+.navbar-brandLarge span {
+	color: #c30505;
+}
+.navbar-brandLarge:hover {
+	color: #948b84;
+}
+.navbar-default .navbar-brandLarge {
+    color: #948b84;
+}
+.navbar-nav ul li a:hover {
+	color: #948b84;
+}
+.mobile-nav ul li a:hover {
+	color: #ffffff;
+}
+.navbar-nav .current_page_item a:hover,.navbar-nav .current_page_parent a:hover {
+	color: #ffffff;
+}
+.navbar-nav li {
+	font-size: 24px;
+	display: inline-block;
+	text-align: center;
+    padding: 63px 0 38px 0;
+    margin: 0px 0 0 0;
+}
+.navbar-nav li a{
+	padding: 63px 10px 74px 10px;
+}
+.navbar-nav li a:after{
+	padding: 67px 15px 39px 15px;
+}
+.navbar-nav ul {
+	margin-bottom: 0;
+}
+
+/********************************************
+Header - Arrow on Menu
+*********************************************/
+li:after {
+  font-family: "FontAwesome";
+  white-space: pre;
+  content: "\A\f0d8";
+  font-size: 60px;
+  vertical-align: bottom;
+  line-height: 0px;
+  color: transparent; /*Hides the other arrows*/
+  bottom: -30px;
+  position: relative;
+}
+li.current_page_item:after,li.current_page_parent:after, body.single-success-stories li.page-item-17:after {
+  color: #948b84;
+}
+.single-success-stories li.current_page_parent a, .single-success-stories li.current_page_parent a:hover {
+	color: #948b84;	
+}
+.single-success-stories li.current_page_parent:after{
+	color:rgba(255,255,255, 0);
+}
+li.current_page_item, li.current_page_parent, body.single-success-stories li.page-item-17 {
+  background-color: #c30505;
+}
+.single-success-stories .current_page_parent{
+	background-color: #ffffff;
+}
+li.current_page_item a, li.current_page_parent a, body.single-success-stories li.page-item-17 a {
+	color: #ffffff;
+}
+
+/********************************************
+Footer
+*********************************************/
+footer{
+	background:#c0c0c0;
+	border-top: 3px solid #948b84;
+	padding: 30px 0 15px 0;
+	margin-top: 30px;
+}
+.footer-logo{
+	font-size: 40px;
+	line-height: 34px;
+	margin-top: 15px;
+}
+.crossFitJournal{
+	margin-top: 5px;
+}
+
+.footer-logo span {
+	color: #c30505;
+}
+.footer-logo:hover {
+	color: #948b84
+}
+.footer-nav{
+	font-size: 20px;
+	text-align: ce
+}
+footer h4{
+	margin: 0 0 10px 0;
+	background:#333333;
+	color: #ffffff;
+	padding:10px;
+	font-size: 20px;
+}
+.footer-nav a{
+	font-size: 20px;
+	color: #000000
+}
+.copyright{
+	margin-top: 15px;
+	font-size: 12px;
+}
+.copyright p{
+	font-size: 12px;
+	color: #000000
+}
+.socialicons .fa-facebook,.socialicons .fa-google-plus, .socialicons .fa-twitter{
+	font-size: 32px;
+	margin-right: 10px;
+	background-color:#948b84;
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 50%;
+	width:52px;
+	height:52px;
+}
+.connect a{
+	font-size: 16px;
+	color: #333333;
+}
+i.fa.fa-facebook{
+	padding: 12px 0 10px 15px ;
+}
+/**************************************************************************************************
+Page Templates
+***************************************************************************************************/
+/********************************************
+Page: Home
+*********************************************/
+.lineBreak {
+    margin: -45px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+}
+.lineBreak2 {
+	margin: 15px 0; /*Override margin for the line break inside Success Stories*/
+}
+.lineBreak2:last-child{
+	display: none;
+}
+hr {
+	height: 6px;
+	background: url('images/lineBreak.png') repeat-x 0 0;
+    border: 0;
+    position: relative;
+	z-index: 1;
+	margin: -20px 0 30px 0; /*Overrides bootstrap margin top of 20px*/
+}
+p.sectionParagraph {
+	font-size: 18px;
+}
+a.viewOurClasses-viewOurSchedule {
+	font-size: 58px;
+    text-align: center;
+    position: relative;
+    bottom: 111px; /*Had to manually push the text up*/
+    line-height: 84px;
+    color: #ffffff;
+    padding: 0 25px;
+    border: 3px solid #ffffff;
+}
+.getStartedNowSection{
+	position: relative;
+    bottom: 0px; /*Had to manually push the text up*/
+}
+.viewOurClasses-viewOurSchedule a:first-child {
+    padding: 0;
+    border: none;
+}
+.getStartedNowDiv, .viewOurScheduleDiv, .scaleimage {
+	overflow: hidden;
+	text-align: center;
+}
+.getStartedNowDiv img, .viewOurScheduleDiv img, .scaleimage img {
+	transition: 1s;/*Takes 1 second to revert back to original values*/
+}
+.getStartedNowDiv img:hover, .viewOurScheduleDiv img:hover,.scaleimage img {
+	-webkit-transform: scale(1.01);/*Scales both x and y axis*/
+	-moz-transform: scale(1.01); /*Added for mozilla browser*/
+	-o-transform: scale(1.01);
+	-ms-transform: scale(1.01);
+	transition: .5s; /*Takes 0.5 seconds to perform scale transformation*/
+}
+
+.btn-default a {
+	font-size: 24px;
+	color: #ffffff;
+	padding: 10px 10px;
+}
+.btn-default {
+	transition: 1s;/*Takes 1 second to revert back to original values*/
+}
+.btn-default:hover {
+	background-color: #c30505;
+	-webkit-transform: scale(1.03);/*Scales both x and y axis*/
+	-moz-transform: scale(1.03); /*Added for mozilla browser*/
+	-o-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	transition: .5s; /*Takes 0.5 seconds to perform scale transformation*/
+}
+.sectionContainer {
+	padding-right: 15px;
+}
+.successStory {
+	background-color: #c30505;
+	color: #ffffff;
+    padding: 10px 0 10px 15px;
+    margin: 0;
+}
+.personName {
+	font-size: 20px;
+}
+.personName:first-child {
+	margin-top: 15px;
+}
+.personStory {
+	font-size: 16px;
+}
+.personStory a {
+	color: #c30505;
+}
+.slidedescription{
+	margin-top:20px;
+	position: absolute;
+	color:#1C456A;
+}
+.slidedescription{
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: 400;
+	text-align: left;
+	max-width: 501px;
+}
+img.rsImg{
+	position: relative;
+	z-index: -1;
+}
+/********************************************
+Page: Sidebar
+*********************************************/
+.gform_wrapper{
+	max-width: 100%!important;
+	border:1px solid #c30505;
+	padding:0px 10px;
+	margin:0!important;
+	background: rgba(226,226,226,1);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(194,194,194,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(100%, rgba(194,194,194,1)));
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(194,194,194,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(194,194,194,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(194,194,194,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(194,194,194,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#c2c2c2', GradientType=0 );
+}
+.gform_wrapper h3.gform_title{
+	font-size: 32px!important;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding:10px 0 10px 10px;
+	font-weight: 500!important;
+	margin: 0px -10px!important;
+	background: #c30505;
+}
+.gform_wrapper .gform_heading {
+    width: 100%!important;
+    margin: 0px;
+    padding: 0!important;
+	margin-bottom: 0em!important;
+}
+.gform_wrapper .top_label .gfield_label{
+	font-weight: 500!important;
+	margin: 1em 0 0em!important;
+}
+.gform_wrapper textarea.large {
+    height: 7.625em!important;
+}
+.gform_wrapper .gform_footer input[type=submit]{
+	background: #c30505;
+	color:#fff;
+	border: 1px solid #c30505;
+	padding:5px 15px;
+}
+/********************************************
+Page: About
+*********************************************/
+
+
+/********************************************
+Page: Programs
+*********************************************/
+
+
+/********************************************
+Mobile Schedule
+*********************************************/
+.mobileDescriptionAboveSchedule a {
+	color: #c30505;
+}
+.mobileDescriptionAboveSchedule a:hover {
+	color: #c30505;
+}
+
+/********************************************
+Page: Schedule
+*********************************************/
+.scheduleTitle {
+	margin-bottom: -71px;
+}
+.calendarFull{
+	border: 1px solid #000000;
+    padding: 0 15px;
+    margin: 30px auto 0 auto;
+    -webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.calendarTitle{
+	background-color: #dddddd;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 3px solid #948b84;
+}
+.container > div > div > div:nth-child(1) > div.row.calendarTitle{
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+}
+.container > div > div > div:nth-child(7) > div.row.calendarTitle{
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+.calendarColumn{
+	border-right: 1px solid #948b84;
+}
+.calendarColumn:last-child{
+	border-right:none; 
+}
+.dayOfWeek, .calendarTitle{
+	padding: 5px 7px;
+}
+.dayOfWeek{
+	min-height: 170px;
+	border-bottom: 1px solid #948b84;
+	text-align: center;
+	padding-top: 30px;
+	color: #c30505;
+}
+.dayOfWeek strong{
+	font-size: 32px;
+	color: #000;
+}
+.dayOfWeek:last-child{
+	border-bottom: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 700px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 700px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 700px), only screen and (min-device-pixel-ratio: 2) and (min-width: 700px), only screen and (min-resolution: 192dpi) and (min-width: 700px), only screen and (min-resolution: 2dppx)  and (min-width: 700px) { 
+	.dayOfWeek strong {
+		font-size: 28px;
+	}
+	.dayOfWeek span {
+		font-size: 14px;
+	}
+}
+
+/********************************************
+Page: Success Stories
+*********************************************/
+
+
+/********************************************
+Page: Get Started
+*********************************************/
+.sidebarGetStarted p a i{
+	font-size: 36px;
+	margin-right: 8px;
+	color:#000000;
+}
+.sidebarGetStarted{
+	background-color: #c0c0c0;
+	padding: 0;
+}
+.sidebarGetStarted a{
+	color: #000000;
+}
+
+/********************************************
+Page: Blog
+*********************************************/
+hr.blog{
+	margin:15px 0 30px 0;
+}
+.blogContainer a, .successStoriesContainer a{
+	color:#c30505;
+}
+.sidebar h3, .sidebarGetStarted h3 {
+  background-color:#c30505;
+  color: #ffffff;
+  padding:8px 15px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.sidebar{
+	background-color: #c0c0c0;
+	padding: 0;
+}
+.sidebar ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0 0 0 15px;
+}
+.sidebar ul li{
+	padding: 0px;
+	font-size: 18px;
+}
+.sidebar ul li a{
+  font-size: 16px;
+}
+.sidebar li>a:hover, 
+.sidebar li:hover:before,
+.sidebar li>a:hover, 
+.sidebar li:hover:before{
+  color:#000000!important;
+}
+img.attachment-post-thumbnail{
+    width: 100%;
+    height: auto;
+    max-width: 720px; 
+}
+.featured-img-section{
+	  height: auto;
+	  max-height: 300px;
+	  overflow: hidden;
+	  margin:5px 0px 15px;
+}
+.blog .internalPagesImageDiv, .single .internalPagesImageDiv {
+	background-position: 0px, 300px;
+}
+
+/**************************************************************************************************
+Media Queries
+***************************************************************************************************/
+							@media screen and (max-width: 1322px) {
+								.navbar-nav li a {
+									font-size: 20px;
+								    padding: 63px 6px 74px 6px;
+								}
+								.navbar-phone {
+	    							font-size: 20px;
+	    							padding: 67px 0px 0 0px;
+								}
+							}
+@media screen and (max-width: 1199px) {
+	/********************************************
+	Header
+	*********************************************/
+
+	/********************************************
+	Page: Home
+	*********************************************/
+	a.viewOurClasses-viewOurSchedule{
+	    font-size: 47px;
+	    line-height: 61px;
+    	bottom: 85px;
+	}
+	.lineBreak {
+    margin: -25px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+	}
+	hr {
+	    margin: 0px 0 30px 0; /*Overrides margin top of 20px*/
+	}	
+}
+
+							@media screen and (max-width: 1130px) {
+								.navbar-nav li a {
+									font-size: 16px;
+								    padding: 63px 5px 74px 5px;
+								}
+								.navbar-phone {
+	    							font-size: 16px;
+	    							padding: 73px 0px 0 0px;
+								}
+							}
+
+@media screen and (max-width: 991px) {
+	/********************************************
+	Header
+	*********************************************/
+	.navbar-brandLarge {
+		    font-size: 44px;
+    height: 83px;
+    width: 170px;
+    line-height: 40px;
+    padding: 0;
+    text-shadow: -1px 2px 8px rgba(150, 150, 150, 0.35);
+    margin: 43px 15px 0 0;
+	}
+	.sidebarGetStarted{
+		margin: 15px 0 0 0;
+	}
+	footer h4{
+	margin: 10px 0 10px 0;
+}
+.paddingRightNoneMobile{
+	padding-right: 0;
+}
+	/********************************************
+	Page: Home
+	*********************************************/
+	.viewOurClasses-viewOurSchedule {
+		font-size: 64px;
+    	line-height: 82px;
+        bottom: 128px;
+	}
+	.viewOurScheduleDiv {
+		margin: -45px 0 0 0; /*Had to override the margin due to the "Get Started Now" div
+							pushing down*/
+	}
+	.lineBreak {
+	    margin: -45px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+	}
+	.sectionContainer {
+		padding-right: 0;
+	}
+	.frontPageButton1 {
+		background-color: #948b84; /*Chagned button color to grey because the red "Success Stories"
+									look too similar to the red button*/	
+	}
+	.frontPageButton1:hover {
+		background-color: #948b84; /*Kept the grey background when hovering over the button*/	
+	}
+	hr {
+    	margin: -50px 0 30px 0; /*Overrides margin top of 0px*/
+	}
+	/********************************************
+	Page: Schedule
+	*********************************************/
+	.container > div > div:nth-child(1) > div.calendarTitle.row {
+		-webkit-border-top-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		border-top-left-radius: 10px;
+		-webkit-border-top-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		border-top-right-radius: 10px;
+	}
+	.calendarColumn{
+		border-right: none;
+	}
+	/********************************************
+	Page: Nine + Three Column
+	*********************************************/
+	.nineColumnDiv {
+		margin-right: -15px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+	/********************************************
+	Header
+	*********************************************/
+	.grayBorder {
+		background-color: #c30505;
+	}
+	.navmenu, .navbar-offcanvas {
+	    width: 250px; /*Overrides Jasny Bootstrap of 300px. Did this because on devices 
+	    				less than 320px, the menu button moves to far to the right 
+	    				making it disappear.*/
+	    border-right: 3px solid #6B625C;
+	    background-color: #948b84;
+	}
+	.navbar-nav li {						/*Overrides all padding and margin*/
+		display: block;									/*||*/
+        padding: 0px 0px 0px 30px;
+	    text-align: left;								/*||*/
+	}													/*||*/
+	.navbar-nav li a {									/*||*/
+		padding: 0 0 0 0;								/*||*/
+		font-size: 18px;
+		color: #ffffff;
+	}													/*||*/
+	.navbar-nav li a:after{								/*||*/
+		padding: 0;										/*||*/
+	}													/*||*/
+	.navbar-nav ul {									/*||*/
+		margin: 0;										/*||*/
+	}													/*||*/
+	.navbar-nav li a:first-child{						/*||*/
+		padding: 0;										/*||*/
+	}										/*Overrides all padding and margin*/
+	.navbar-nav {
+    	margin: 7.5px 0;
+	}
+	.navbar-brandLarge {
+		text-align: center;
+		margin: 30px auto;
+	}
+	.navbar-phone { /*Overriding all styles for mobile devices*/
+		display: inline;
+	    padding: 0;
+	    float: none;
+	    text-align: center;
+	    margin: 0 0 0 0;
+	}
+	.grayBorder{
+		border: none; /*Remove border for devices less than 767px wide*/
+	}
+	.single-success-stories .current_page_parent{
+		background-color: #948b84;
+	}
+	.single-success-stories li.current_page_parent a, .single-success-stories li.current_page_parent a:hover{
+		color: #ffffff;	
+	}
+
+	/********************************************
+	Header - Arrow on Menu
+	*********************************************/
+	li:after { /*Removes triangle from header*/
+		content: "";
+	}
+
+	/********************************************
+	Page: Home
+	*********************************************/
+	.viewOurClasses-viewOurSchedule {
+		font-size: 50px;
+	    line-height: 72px;
+    	bottom: 92px;
+		position: relative; /* Changed the position back to relative */
+	}
+	.viewOurScheduleDiv {
+		margin: -40px 0 0 0; /*Had to override the margin due to the "Get Started Now" div
+							pushing down*/
+	}
+	.getStartedNowDiv img, .viewOurScheduleDiv img, .scaleimage img {
+		transition: 0s;/*Disabled transition*/
+	}
+	.getStartedNowDiv img:hover, .viewOurScheduleDiv img:hover,.scaleimage img {
+		-webkit-transform: scale(1);/*Disabled transfrom*/
+		-moz-transform: scale(1); 
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transition: 0s; /*Disable transition*/
+	}
+	.lineBreak {
+    margin: -35px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+	}
+	.frontPageButton {
+		text-align: center; /*Had to wrap the button in a col-md-12 then I was able to center the 
+							button with this line of code*/
+	}
+	.btn-default {
+		transition: 0s; /*Removed transition*/
+	}
+	.btn-default:hover {
+		-webkit-transform: scale(1); /*Removed transform because keeping it made the user have to tap
+									 the button twice*/	
+		-moz-transform: scale(1); /*Added for mozilla browser*/
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transition: 0s; /*Removed transition*/
+	}
+	hr {
+    	margin: -40px 0 30px 0; /*Overrides margin top of -50px*/
+	}
+	/********************************************
+	Page: Blog
+*********************************************/
+	.featured-img-section{
+	  height: auto;
+	  max-height: 500px;
+	  overflow: hidden;
+	}
+/********************************************
+	Page: Sidebar
+*********************************************/
+	.sidebar ul li{
+		padding-bottom: 15px;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:560px) {
+	/********************************************
+	Universal
+	*********************************************/
+	.internalPagesImageDiv h1, .scheduleImageDiv h1, .successStoriesImageDiv h1 {
+		font-size: 60px;
+	}
+	/********************************************
+	Page: Home
+	*********************************************/
+	.viewOurClasses-viewOurSchedule {
+		font-size: 42px;
+    	line-height: 60px;
+    	bottom: 81px; /*Changed border width from 3px to 2px for all devices less than
+								560px*/
+	}
+	.viewOurClasses-viewOurSchedule a {
+	    color: #ffffff;
+	    padding: 0 25px;
+	    border: 2px solid #ffffff;
+	}
+	.viewOurScheduleDiv {
+		margin: -30px 0 0 0; /*Had to override the margin due to the "Get Started Now" div
+							pushing down*/
+	}
+	.lineBreak {
+   	 margin: -25px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+	}
+	hr {
+    	margin: -30px 0 30px 0; /*Overrides margin top of -40px*/
+	}
+/********************************************
+	Page: Blog
+*********************************************/
+	.featured-img-section{
+	  height: auto;
+	  max-height: 350px;
+	  overflow: hidden;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	/********************************************
+	Page: Home
+	*********************************************/
+	a.viewOurClasses-viewOurSchedule {
+	   	font-size: 22px;
+	    line-height: 38px;
+	    bottom: 48px;
+	}
+	.viewOurScheduleDiv {
+		margin: 20px 0 0 0; /*Had to override the margin due to the "Get Started Now" div
+							pushing down*/
+	}
+	.lineBreak {
+    	margin: -5px 0 0 0; /*Had to push margin up because there is extra space on the "Get Started
+							Now" div and the "View Our Schedule" div*/
+	}
+	hr {
+    	margin: -10px 0 30px 0; /*Overrides margin top of -30px*/
+	}
+	/********************************************
+	Universal
+	*********************************************/
+	.internalPagesImageDiv, .successStoriesImageDiv {
+		background-position: -200px, 300px;
+	}
+	.scheduleImageDiv {
+		
+	}
+	
+
+}
+/*********************************************************
+Only to move Title in Image of page Success Stories
+**********************************************************/
+@media screen and (max-width: 451px) {
+	.successStoriesImageDiv h1 {
+    	top: 35%;
+	}
+}
+
+/*Bootstrap Overides*/
+@media (min-width: 768px){
+  .eight-cols .col-md-1,
+  .eight-cols .col-sm-1,
+  .eight-cols .col-lg-1  {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .eight-cols .col-md-1,
+  .eight-cols .col-sm-1,
+  .eight-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+  }
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */    
+@media (min-width: 1200px) {
+  .eight-cols .col-md-1,
+  .eight-cols .col-sm-1,
+  .eight-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+  }
+}
